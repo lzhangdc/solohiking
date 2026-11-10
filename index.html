@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Solo Hiking </title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 20px; background: #fff; color: #222; }
-    h1 { text-align: center; }
+  body { font-family: sans-serif; margin: 0; padding: 20px; background: #fff; color: #222; }
+  h1 { text-align: center; }
 
-    /* Masonry-style layout: keeps each photo's natural shape */
-    .gallery { columns: 3 300px; column-gap: 16px; }
+  .gallery { display: flex; flex-direction: column; align-items: center; gap: 32px; }
 
-    figure { margin: 0 0 16px; break-inside: avoid; }
-    figure img { width: 100%; height: auto; display: block; border-radius: 6px; }
-    figcaption { font-size: 14px; color: #555; padding: 6px 2px 0; }
+  figure { margin: 0; max-width: 100%; overflow-x: auto; }
+  figure img { width: auto; height: auto; max-width: none; display: block; }
+  figcaption { font-size: 14px; color: #555; padding: 6px 2px 0; }
   </style>
 </head>
 <body>
